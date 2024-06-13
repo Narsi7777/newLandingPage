@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/newLandingPage/static/css/main.ef749ce9.css",
+    "main.js": "/newLandingPage/static/js/main.3fa13611.js",
+    "static/js/453.ceca2311.chunk.js": "/newLandingPage/static/js/453.ceca2311.chunk.js",
+    "static/media/middleVideo.mp4": "/newLandingPage/static/media/middleVideo.7a89311510ff1b27a4b5.mp4",
+    "static/media/x6M.png": "/newLandingPage/static/media/x6M.068ded4d7ec5f795c76d.png",
+    "static/media/5series.png": "/newLandingPage/static/media/5series.c789335f6d6046553985.png",
+    "static/media/bmw_PNG99547.png": "/newLandingPage/static/media/bmw_PNG99547.7ee803b0efd2cb8e5be6.png",
+    "static/media/2series2.webp": "/newLandingPage/static/media/2series2.658d550d723d61d6b8f9.webp",
+    "static/media/xb7.webp": "/newLandingPage/static/media/xb7.8e4088e5e1a4201093fb.webp",
+    "static/media/bmwZ4.webp": "/newLandingPage/static/media/bmwZ4.59d5960a233658241776.webp",
+    "static/media/m3.webp": "/newLandingPage/static/media/m3.6a0db1630fd345e18055.webp",
+    "index.html": "/newLandingPage/index.html",
+    "main.ef749ce9.css.map": "/newLandingPage/static/css/main.ef749ce9.css.map",
+    "main.3fa13611.js.map": "/newLandingPage/static/js/main.3fa13611.js.map",
+    "453.ceca2311.chunk.js.map": "/newLandingPage/static/js/453.ceca2311.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef749ce9.css",
+    "static/js/main.3fa13611.js"
+  ]
+}
