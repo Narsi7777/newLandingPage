@@ -1,4 +1,3 @@
-// Middle.js
 import React, { useRef, useEffect } from "react";
 import videoFile from "../components/middleVideo.mp4";
 import cardFrontImg1 from "../components/2series2.webp";
@@ -41,8 +40,8 @@ function Middle() {
         <source src={videoFile} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-        <h2 style={{color:"red",textAlign:"center",animation:"slidein 10s infinite"}}>Please Hover On the Car Correctly </h2>
-        <p style={{color:"blue",textAlign:"center",animation:"slidein 10s infinite"}}>Click On Any Car To Open More...</p>
+      <h2 style={{color:"red",textAlign:"center",animation:"slidein 10s infinite"}}>Please Hover On the Car Correctly</h2>
+      <p style={{color:"blue",textAlign:"center",animation:"slidein 10s infinite"}}>Click On Any Car To Open More...</p>
       <div className="grid-container">
         <a href="https://www.bmwusa.com/vehicles/2-series/overview.html"><Card cardFrontImg={cardFrontImg1} title="2 Series Gran coupe" description="Description 1" /></a>
         <a href="https://www.bmwusa.com/vehicles/z-series/roadster/bmw-z4-sdrive30i-roadster.html#designyourown"><Card cardFrontImg={cardFrontImg2} title="Z4 sDrive30i" description="Description 2" /></a>
@@ -51,9 +50,8 @@ function Middle() {
         <a href="https://www.bmwusa.com/vehicles/x-models/x6/suv/overview.html"><Card cardFrontImg={cardFrontImg5} title="X6 M60i" description="4.4-liter BMW M TwinPower Turbo V-8" /></a>
         <a href="https://www.bmwusa.com/vehicles/3-series/sedan/overview.html"><Card cardFrontImg={cardFrontImg6} title="M3 SEDAN" description="Description 6" /></a>
       </div>
-    </div>);
+    </div>
+  );
 }
 
 export default Middle;
-
-

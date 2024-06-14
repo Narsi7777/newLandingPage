@@ -1,10 +1,9 @@
-/* public/style.css */
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+/* Base Styles */
+body, html {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 header {
@@ -17,23 +16,26 @@ header {
   align-items: center;
   background-image: url('wallpaper4.jpg'); 
   background-size: 1900px;
-  background-position:center left;
+  background-position: center left;
   height: 600px;
   max-width: 1500px; 
   margin: 0 auto; 
   border: 0px solid transparent; 
 }
-header h1{
+
+header h1 {
   grid-area: 4 / 1 / 2 / 2;
   padding-left: 60px;
   padding-top: 100px;
 }
+
 img {
   width: 50px;
   padding-right: 10px;
   padding-top: 100px;
   grid-area: 4 / 1 / 2 / 2;
 }
+
 .animated-text-container {
   position: relative;
   overflow: hidden;
@@ -55,6 +57,7 @@ img {
   font-weight: 400;
   font-style: normal;
 }
+
 @keyframes slidein {
   0% {
     left: -100%;
@@ -74,9 +77,8 @@ img {
   }
 }
 
-.bmw-text{
+.bmw-text {
   color: blue;
-  
   font-size: 4rem;
 }
 
@@ -86,7 +88,6 @@ img {
   padding-bottom: 60px;
   padding-right: 50px;
 }
-
 
 .navbar ul {
   list-style-type: none; 
@@ -103,17 +104,17 @@ img {
   padding: 8px 12px; 
   border-radius: 5px; 
   transition: background-color 0.3s ease; 
- 
 }
 
-.navbar a.active{
+.navbar a.active {
   color: orange;
   text-decoration: underline;
+}
 
-}
 .navbar a:hover {
-  color: rgb(0, 183, 255); 
+  background-color: blue;
 }
+
 .btn-container {
   display: grid;
   grid-template-areas: 
@@ -138,7 +139,6 @@ img {
 
 .btn1 {
   grid-area: button1; 
-  
 }
 
 .btn2 {
@@ -150,7 +150,73 @@ img {
 .btn:hover {
   background-color: #2980b9;
 }
-/* styles.css */
+
+
+@media only screen and (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    background-size: cover; 
+    background-position: center center; 
+  }
+
+  header h1 {
+    grid-area: auto;
+    padding-left: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  img {
+    padding-top: 10px;
+    grid-area: auto;
+    margin: 0 auto;
+  }
+
+  .animated-text-container {
+    grid-area: auto;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    display: none;
+    margin: 0;
+  }
+
+  .hamburger-menu {
+    display: block;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .menu-item {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+  }
+
+  .menu-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+  }
+
+  .menu-item a:hover {
+    background-color: blue;
+  }
+
+  .btn-container {
+    grid-area: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .video-container {
   position: relative;
   width: 100%;
@@ -170,13 +236,12 @@ img {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 20px; /* space between cards */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
-
 
 .card-container {
   display: flex;
@@ -193,6 +258,7 @@ img {
   width: 100%;
   height: 100%;
   transition: transform 0.5s;
+  padding-bottom: 30px;
 }
 
 .card:hover {
@@ -243,7 +309,6 @@ img {
   background-color: transparent;
   opacity: 0;
   transition: opacity 0.5s;
-  
 }
 
 .card:hover .card-front h1,
@@ -251,7 +316,6 @@ img {
 .card:hover .card-back h1,
 .card:hover .card-back p {
   opacity: 1;
-  
 }
 
 .card-front .card-img {
@@ -259,7 +323,8 @@ img {
   height: 100%;
   object-fit: cover;
 }
-  
+
+
 .footer {
   background-color: #222;
   color: white;
@@ -304,4 +369,26 @@ img {
 
 .footer p {
   margin: 5px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .video-container {
+    height: auto;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+    justify-items: center;
+  }
+
+  .card-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer .social-icons a {
+    font-size: 20px;
+  }
 }
